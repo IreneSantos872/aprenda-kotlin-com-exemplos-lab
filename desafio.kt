@@ -12,7 +12,7 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>, 
     
     fun matricular(usuario: Usuario) {
         inscritos.add(usuario)
-        println("O usuario ${usuario.nome} foi matriculado")
+        println("O usuario ${usuario.nome} ${usuario.sobrenome} foi matriculado")
     }
     
     fun listarUsuarios(){
